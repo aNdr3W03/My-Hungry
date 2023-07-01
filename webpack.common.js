@@ -28,6 +28,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      favicon: 'src/public/images/favicon.png',
       filename: 'index.html',
       template: path.resolve(__dirname, 'src/templates/index.html'),
     }),
