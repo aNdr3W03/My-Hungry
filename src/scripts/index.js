@@ -43,3 +43,7 @@ hero.addEventListener('click', function() {
 main.addEventListener('click', function() {
   drawer.classList.remove('open');
 });
+
+// Footer Year Copyright
+const footer_year = new Date().getFullYear();
+document.getElementById('footer-year').innerHTML = footer_year;
