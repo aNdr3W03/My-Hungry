@@ -1,12 +1,15 @@
 {
-  "name": "restaurant-apps",
+  "name": "my-hungry",
   "version": "1.0.0",
-  "description": "",
+  "description": "Web-based application with Progressive Web App that provides information about restaurants",
   "main": "index.js",
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "test": "karma start"
+    "serve": "http-server dist --port 9000",
+    "build-serve": "npm run build && npm run serve",
+    "test": "karma start",
+    "lint": "eslint ./src"
   },
   "keywords": [],
   "author": "Andrew Benedictus Jamesie <andrewbjamesie@yahoo.com>",
@@ -15,10 +18,15 @@
     "@babel/core": "^7.18.5",
     "@babel/preset-env": "^7.18.2",
     "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
-    "eslint": "^8.17.0",
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "http-server": "^14.1.1",
     "jasmine-ajax": "^4.0.0",
     "jasmine-core": "^4.2.0",
     "karma": "^5.2.3",
@@ -28,13 +36,19 @@
     "karma-sourcemap-loader": "^0.3.8",
     "karma-webpack": "^5.0.0",
     "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.2",
     "webpack-merge": "^5.8.0",
-    "whatwg-fetch": "^3.6.2"
+    "whatwg-fetch": "^3.6.2",
+    "workbox-precaching": "^7.0.0",
+    "workbox-webpack-plugin": "^7.0.0"
   },
   "dependencies": {
-    "regenerator-runtime": "^0.13.9"
+    "idb": "^7.1.1",
+    "lazysizes": "^5.3.2",
+    "regenerator-runtime": "^0.13.9",
+    "workbox-window": "^7.0.0"
   }
 }

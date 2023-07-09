@@ -24,11 +24,23 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/hero',
+              publicPath: 'images/hero',
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      favicon: 'src/public/images/favicon.png',
       filename: 'index.html',
       template: path.resolve(__dirname, 'src/templates/index.html'),
     }),

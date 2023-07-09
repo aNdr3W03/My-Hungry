@@ -1,0 +1,31 @@
+import '../component/resto-list';
+import RestaurantData from '../../data/restaurant-source';
+import { createPageLoaderTemplate } from '../templates/template-creator';
+
+const Home = {
+  async render() {
+    const html = `
+      ${document.querySelector('main').innerHTML = createPageLoaderTemplate.show()}
+      <section class="content">
+        <div class="content-inner">
+          <h1>Cari Rumah Makan dan Restoran</h1>
+          <div class="content-list" id="list">
+            <resto-list></resto-list>
+          </div>
+        </div>
+      </section>
+    `;
+
+    return html;
+  },
+
+  async afterRender() {
+    const restaurantContainer = document.querySelector('resto-list');
+    const { restaurants } = await RestaurantData.listRestaurants();
+
+    restaurantContainer.value = restaurants;
+    createPageLoaderTemplate.remove();
+  },
+};
+
+export default Home;

@@ -163,7 +163,7 @@ body {
   align-items: center;
   background-position: center;
   background-color: black !important;
-  background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('../public/images/heros/hero-image_4.jpg');
+  background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('../public/images/hero/hero-image-small.jpg');
 }
 
 .hero-content {

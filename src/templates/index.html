@@ -3,7 +3,20 @@
 <head>
   <!-- Meta Tags -->
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web-based application with Progressive Web App that provides information about restaurants">
+  <meta name="theme-color" content="#885012">
+
+  <!-- Icon and Manifest -->
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="icons/favicon-64x64.png" sizes="64x64">
+  <link rel="manifest" href="app.webmanifest">
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"/>
 
   <!-- Title -->
   <title>My Hungry</title>
@@ -14,46 +27,13 @@
   <a href="#content" class="skip-link">Skip to content</a>
 
   <!-- Navbar Mobile -->
-  <div class="menu-mobile">
-    <div class="icon-menu" id="menu"><a href="#">&#9776;</a></div>
-    <div class="logo-mobile"><a href="">My Hungry</a></div>
-    <div class="logo-mobile">&nbsp;</div>
-  </div>
-  <nav class="navbar-mobile" id="drawer">
-    <ul class="navbar-list-mobile">
-      <li class="navbar-item-mobile"><a href="">Home</a></li>
-      <li class="navbar-item-mobile"><a href="#">Favorite</a></li>
-      <li class="navbar-item-mobile"><a href="https://www.linkedin.com/in/andrewbjamesie" target="_blank" rel="noopener">About Us</a></li>
-    </ul>
-  </nav>
-
-  <!-- Navbar Desktop -->
-  <nav class="navbar-desktop">
-    <a href="" class="logo">My Hungry</a>
-    <ul class="navbar-list-desktop">
-      <li class="navbar-item-desktop"><a href="">Home</a></li>
-      <li class="navbar-item-desktop"><a href="#">Favorite</a></li>
-      <li class="navbar-item-desktop"><a href="https://www.linkedin.com/in/andrewbjamesie" target="_blank" rel="noopener">About Us</a></li>
-    </ul>
-  </nav>
+  <nav-bar></nav-bar>
 
   <!-- Jumbotron -->
-  <div class="hero">
-    <div class="hero-content">
-      <h1 class="hero-title">My Hungry</h1>
-      <p class="hero-subtitle">Lapan kan? Cari rumah makan dan restoran terbaik dan ramah di kantong sekarang juga!</p>
-    </div>
-  </div>
+  <hero-image></hero-image>
 
   <!-- Content -->
-  <main id="content">
-    <section class="content">
-      <div class="content-inner">
-        <h1>Cari Rumah Makan dan Restoran</h1>
-        <div class="content-list" id="list"></div>
-      </div>
-    </section>
-  </main>
+  <main id="content"></main>
 
   <!-- Footer -->
   <footer>
