@@ -9,8 +9,8 @@ const Home = {
       <section class="content">
         <div class="content-inner">
           <h1>Cari Rumah Makan dan Restoran</h1>
-          <div class="content-list" id="list">
-            <resto-list></resto-list>
+          <div id="list">
+            <resto-list class="content-list"></resto-list>
           </div>
         </div>
       </section>

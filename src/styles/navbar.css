@@ -1,0 +1,134 @@
+.skip-link {
+  top: -100px;
+  left: 0;
+  z-index: 10;
+  padding: 10px;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #885012;
+}
+
+.skip-link:focus {
+  top: 100px;
+}
+
+.menu-mobile {
+  top: 0;
+  z-index: 10;
+  padding: 19.5px 0;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  color: white !important;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #885012;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.icon-menu a {
+  color: white !important;
+  padding: 19.5px;
+  text-decoration: none;
+}
+
+.logo-mobile a {
+  padding: 19.5px;
+  color: white !important;
+  text-decoration: none;
+}
+
+.navbar-mobile {
+  width: 100%;
+  top: 66px;
+  z-index: 10;
+  display: flex;
+  position: fixed;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: white;
+  transition: transform 0.3s ease;
+  transform: translate(-100%, 0);
+  -webkit-transform: translate(-100%, 0);
+}
+
+.navbar-mobile a {
+  padding: 1em;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navbar-list-mobile {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.navbar-item-mobile {
+  display: list-item;
+  box-sizing: border-box;
+  line-height: 24px;
+  text-align: left;
+}
+
+.navbar-item-mobile a {
+  width: 100%;
+  color: black !important;
+	transition: 0.2s;
+}
+
+.navbar-item-mobile a:hover {
+  background-color: #a1a1a1;
+}
+
+.navbar-desktop {
+	width: 100%;
+  top: 0;
+  z-index: 10;
+	display: flex;
+  position: fixed;
+	font-size: 16px;
+	font-weight: 600;
+  background-color: #885012;
+}
+
+.navbar-desktop a {
+  padding: 1.3em;
+  display: inline-block;
+  color: white !important;
+  text-decoration: none;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  width: 22%;
+  display: inline-block;
+  box-sizing: border-box;
+  line-height: 24px;
+  text-align: left;
+}
+
+.navbar-list-desktop {
+  margin: 0;
+  padding: 0;
+  width: 78%;
+  text-align: right;
+}
+
+.navbar-item-desktop {
+  display: inline-block;
+  box-sizing: border-box;
+  color: white !important;
+  line-height: 24px;
+  text-align: right;
+	transition: 0.2s;
+}
+
+.navbar-item-desktop:hover {
+  background-color: #663c0c;
+}

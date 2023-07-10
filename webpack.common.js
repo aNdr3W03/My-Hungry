@@ -24,19 +24,6 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.(png|jpg|jpeg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'images/hero',
-              publicPath: 'images/hero',
-            },
-          },
-        ],
-      },
     ],
   },
   plugins: [

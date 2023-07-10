@@ -1,0 +1,18 @@
+footer {
+  padding: 2em;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  background-color: #885012;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+	transition: 0.2s opacity;
+}
+
+footer a:hover {
+  opacity: 0.6;
+}
