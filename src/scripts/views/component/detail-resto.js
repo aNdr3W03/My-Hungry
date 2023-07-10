@@ -39,7 +39,7 @@ class DetailResto extends HTMLElement {
     this.innerHTML = `
       <div id="notif-favorite-container" class="notif-favorite-container"></div>
       <article>
-        <img src="${CONFIG.BASE_IMAGE_URL('large') + this._data.pictureId}" class="detail-thumbnail" alt="${this._data.name}">
+        <img src="${CONFIG.BASE_IMAGE_URL.LARGE + this._data.pictureId}" class="detail-thumbnail" alt="${this._data.name}">
         <div id="likeButtonContainer"></div>
         <div class="detail-content">
           <h1 class="detail-title">${this._data.name}</h1>
@@ -78,7 +78,7 @@ class DetailResto extends HTMLElement {
         </div> 
         <h2>Consumer Review</h2>
         <div id="review-container">
-        ${this._data.consumerReviews.map((review) => `
+        ${this._data.customerReviews.map((review) => `
           <div class="review-container">
             <div class="review-photo-profile">
               <img src="./images/user/default.jpg" alt="consumer photo profile">
