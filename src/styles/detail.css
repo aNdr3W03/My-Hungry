@@ -233,7 +233,7 @@ detail-resto section h2 {
   border: 1px solid #CC5009;
   border-radius: 8px;
   color: #676767;
-  background-color: #f8f8f8;
+  background-color: #F8F8F8;
 }
 
 .review-form-element textarea {
@@ -243,7 +243,7 @@ detail-resto section h2 {
   border: 1px solid #CC5009;
   border-radius: 8px;
   color: #676767;
-  background-color: #f8f8f8;
+  background-color: #F8F8F8;
   resize: vertical;
 }
 
@@ -257,6 +257,7 @@ detail-resto section h2 {
 
 .review-form button {
   padding: 16px 32px;
+  float: right;
   font-size: 16px;
   font-weight: 700;
   border: none;
