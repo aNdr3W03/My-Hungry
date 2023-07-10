@@ -49,7 +49,7 @@ const LikeButtonInitiator = {
       FavoriteRestaurantIdb.deleteRestaurant(this._restaurant.id);
       this._renderButton(this._restaurant);
 
-      this._notifContainer.innerHTML = createRemoveFavoriteNotification.show();
+      this._notificationContainer.innerHTML = createRemoveFavoriteNotification.show();
       createRemoveFavoriteNotification.remove();
     });
   },

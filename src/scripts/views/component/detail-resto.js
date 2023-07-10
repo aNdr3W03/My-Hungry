@@ -30,7 +30,7 @@ class DetailResto extends HTMLElement {
   async _likeButtonInitiator() {
     await LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      notifContainer: document.querySelector('#notif-favorite-container'),
+      notificationContainer: document.querySelector('#notif-favorite-container'),
       restaurant: this._data,
     });
   }

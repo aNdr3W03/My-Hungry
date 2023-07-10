@@ -49,7 +49,7 @@ const createSuccessFavoriteNotification = {
   show() {
     return `
       <div class="fav-notif">
-        <p>Success add this restaurant to favorite</p>
+        <p>Restoran ini ditambahkan ke halaman Favorite</p>
       </div>
     `;
   },
@@ -58,7 +58,7 @@ const createSuccessFavoriteNotification = {
     setTimeout(() => {
       const notif = document.querySelector('.fav-notif');
       if (notif) notif.remove();
-    }, 2800);
+    }, 5200);
   },
 };
 
@@ -66,7 +66,7 @@ const createRemoveFavoriteNotification = {
   show() {
     return `
       <div class="fav-notif">
-        <p>Remove this restaurant from favorite</p>
+        <p>Restoran ini sudah dihapus dari halaman Favorite</p>
       </div>
     `;
   },
@@ -75,7 +75,7 @@ const createRemoveFavoriteNotification = {
     setTimeout(() => {
       const notif = document.querySelector('.fav-notif');
       if (notif) notif.remove();
-    }, 2800);
+    }, 5200);
   },
 };
 

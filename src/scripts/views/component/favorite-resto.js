@@ -9,7 +9,7 @@ class FavoriteResto extends HTMLElement {
         <i class="far fa-folder-open"></i>
       </div>
       <div class="empty-favorite-tag">
-        <p>Favorite restaurant still empty</p>
+        <p>Yah, restoran favoritmu masih kosong nih &#128549;</p>
       </div>
   `;
   }
