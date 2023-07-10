@@ -13,8 +13,8 @@ class NavBar extends HTMLElement {
       </div>
       <nav class="navbar-mobile" id="drawer">
         <ul class="navbar-list-mobile">
-          <li class="navbar-item-mobile"><a href="">Home</a></li>
-          <li class="navbar-item-mobile"><a href="#">Favorite</a></li>
+          <li class="navbar-item-mobile"><a href="#">Home</a></li>
+          <li class="navbar-item-mobile"><a href="#/favorite">Favorite</a></li>
           <li class="navbar-item-mobile"><a href="https://www.linkedin.com/in/andrewbjamesie" target="_blank" rel="noopener">About Us</a></li>
         </ul>
       </nav>
@@ -23,8 +23,8 @@ class NavBar extends HTMLElement {
       <nav class="navbar-desktop">
         <a href="" class="logo">My Hungry</a>
         <ul class="navbar-list-desktop">
-          <li class="navbar-item-desktop"><a href="">Home</a></li>
-          <li class="navbar-item-desktop"><a href="#">Favorite</a></li>
+          <li class="navbar-item-desktop"><a href="#">Home</a></li>
+          <li class="navbar-item-desktop"><a href="#/favorite">Favorite</a></li>
           <li class="navbar-item-desktop"><a href="https://www.linkedin.com/in/andrewbjamesie" target="_blank" rel="noopener">About Us</a></li>
         </ul>
       </nav>
