@@ -82,7 +82,7 @@
 }
 
 .navbar-item-mobile a:hover {
-  background-color: #a1a1a1;
+  background-color: #A1A1A1;
 }
 
 .navbar-desktop {
@@ -130,5 +130,5 @@
 }
 
 .navbar-item-desktop:hover {
-  background-color: #663c0c;
+  background-color: #663C0C;
 }

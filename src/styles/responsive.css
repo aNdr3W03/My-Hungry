@@ -73,4 +73,40 @@
   .hero-content {
     max-width: 1000px;
   }
+
+
+
+  detail-resto {
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  detail-resto article {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  /* detail-resto aside {
+    grid-column-start: 3;
+  } */
+
+  detail-resto section {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* grid-row-start: 2; */
+  }
+
+  .detail-content {
+    width: 100%;
+  }
+
+  .detail-menu {
+    width: 100%;
+  }
+
+  .menu-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }

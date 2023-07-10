@@ -1,0 +1,357 @@
+.detail-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+detail-resto {
+  display: grid;
+  margin: 30px auto 50px;
+}
+
+detail-resto article {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.detail-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+	border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.detail-content {
+ width: 80%;
+ margin: 12px auto 32px;
+}
+
+.detail-title {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #444444;
+}
+
+.detail-category-container {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.detail-category {
+  font-size: 16px;
+  color: #444444;
+}
+
+.fa-map-marker-alt {
+  width: 30px;
+  height: 30px;
+  font-size: 1.8em;
+  line-height: 1.4em;
+  text-align: center;
+  color: #CC5009;
+}
+
+.detail-location {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #CC5009;
+}
+
+.detail-description {
+  margin: 8px 0;
+  color: #444444;
+  font-size: 16px;
+}
+
+detail-resto aside {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.detail-menu {
+  display: grid;
+  width: 80%;
+  margin: 0 auto 20px;
+  padding: 20px;
+	border-radius: 8px;
+  background-color: #eeeeee;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu-title-container {
+  margin: 0 0 14px;
+}
+
+.fa-pizza-slice, .fa-mug-hot {
+  width: 24px;
+  height: 24px;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  text-align: center;
+  vertical-align: baseline;
+  color: #CC5009;
+}
+
+.menu-title {
+  display: inline;
+  font-size: 18px;
+  color: #CC5009;
+}
+
+.menu-list {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 8px;
+}
+
+.menu-item {
+  list-style: none;
+  font-size: 14px;
+  color: #444444;
+}
+
+.detail-rating {
+  margin: 20px 0;
+  text-align: right;
+}
+
+.detail-rating span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444444;
+}
+
+.fa-star {
+  width: 24px;
+  height: 24px;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  text-align: center;
+  vertical-align: baseline;
+  color: gold;
+}
+
+detail-resto section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+detail-resto section h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  color: #444444;
+}
+
+
+
+
+
+.review-container {
+  display: grid;
+  margin-bottom: 16px;
+  padding: 0;
+  gap: 20px;
+  grid-template-columns: 60px auto;
+}
+
+.review-photo-profile {
+  width: 60px;
+  height: 60px;
+}
+
+.review-photo-profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.review-body {
+  width: 100%;
+  overflow: hidden;
+}
+
+.review-customer-name {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #444444;
+  text-transform: capitalize;
+}
+
+.review-date-post {
+  font-size: 12px;
+  color: #888888;
+}
+
+.review-content {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #676767;
+}
+
+.review-content::first-letter {
+  text-transform: capitalize;
+}
+
+
+
+
+
+.review-form-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.review-form-container h2 {
+  margin: 48px auto 16px;
+}
+
+.review-form-element {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-row-gap: 8px;
+  margin-bottom: 15px;
+}
+
+.review-form-element label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #CC5009;
+}
+
+.review-form-element input {
+  padding: 6px 8px;
+  font-size: 16px;
+  border: 1px solid #CC5009;
+  border-radius: 8px;
+  color: #676767;
+  background-color: #f8f8f8;
+}
+
+.review-form-element textarea {
+  height: 100px;
+  padding: 6px 8px;
+  font-size: 16px;
+  border: 1px solid #CC5009;
+  border-radius: 8px;
+  color: #676767;
+  background-color: #f8f8f8;
+  resize: vertical;
+}
+
+.review-form-element input:focus,
+.review-form-element textarea:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 3px 1px #CC5009;
+  -moz-box-shadow: 0 0 3px 1px #CC5009;
+  box-shadow: 0 0 3px 1px #CC5009;
+}
+
+.review-form button {
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  background-color: #885012;
+  color: white;
+	transition: 0.2s;
+}
+
+.review-form button:hover {
+  color: #ffffff;
+  background: #663C0C;
+  cursor: pointer;
+}
+
+.input-require {
+  color: #ff0000;
+}
+
+
+
+
+
+.success-message {
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+  opacity: 0;
+  color: #ffffff;
+  background-color: #3be688;
+  transition: opacity 1s;
+}
+
+.show-message {
+  opacity: 1;
+}
+
+.like {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  margin-bottom: -50px;
+  font-size: 28px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #EE0000;
+  background-color: #DDDDDD;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: translate(30px, -80px);
+	transition: 0.2s;
+}
+
+.like:hover {
+  background-color: #CCCCCC;
+}
+
+
+
+
+
+empty-favorite {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+.empty-favorite-icon .fa-folder-open {
+  font-size: 200px;
+  color: #db0000;
+}
+
+.empty-favorite-tag p {
+  font-size: 24px;
+  color: #222121;
+}
+
+.notif-favorite-container {
+  position: fixed;
+}
+
+.fav-notif {
+  position: fixed;
+  padding: 10px 5px 10px 5px;
+  background-color: #d95821;
+  bottom: 5%;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  z-index: 99;
+  animation: showNotif 0.5s, hideNotif 0.5s 2.5s;
+  -webkit-box-shadow: 0 -1px 2px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 -1px 2px -1px rgba(0,0,0,0.75);
+  box-shadow: 0 -1px 2px -1px rgba(0,0,0,0.75);
+}
