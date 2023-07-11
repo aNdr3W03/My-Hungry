@@ -6,6 +6,9 @@ const Home = {
   async render() {
     const html = `
       ${document.querySelector('main').innerHTML = createPageLoaderTemplate.show()}
+      <!-- Jumbotron -->
+      <hero-image></hero-image>
+      
       <section class="content">
         <div class="content-inner">
           <h1>Cari Rumah Makan dan Restoran</h1>

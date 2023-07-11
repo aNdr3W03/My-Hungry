@@ -62,6 +62,8 @@ const createRemoveFavoriteNotification = {
 
 const createReviewTemplate = (reviews) => {
   const review = reviews.customerReviews[reviews.customerReviews.length - 1];
+  console.log(review);
+
   const html = document.createElement('div');
 
   html.classList.add('review-container');

@@ -125,7 +125,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  main {
+  .content {
     max-width: 1200px;
   }
 
@@ -134,7 +134,7 @@
   }
 
   detail-resto {
-    max-width: 80%;
+    max-width: 1200px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
   }
