@@ -37,7 +37,7 @@ const ReviewInitiator = {
 
     if (error.status === false) {
       this.sendData({
-        data: JSON.stringify(data),
+        data,
         form,
         container,
       });
@@ -85,8 +85,6 @@ const ReviewInitiator = {
   },
 
   async sendData({ data, form, container }) {
-    console.log(`sendData data: ${data}`);
-
     try {
       const reviewForm = form;
       reviewForm.querySelector('button').innerHTML = createButtonLoaderTemplate();

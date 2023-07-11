@@ -1,7 +1,7 @@
 {
   "id": "my-hungry-restaurants-pwa",
   "name": "My Hungry",
-  "short_name": "Hungry",
+  "short_name": "My Hungry",
   "description": "Web-based application with Progressive Web App that provides information about restaurants",
   "start_url": "/index.html",
   "display": "standalone",

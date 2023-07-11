@@ -1,5 +1,4 @@
 import API_ENDPOINT from '../globals/api-endpoint';
-// import CONFIG from '../globals/config';
 
 class RestaurantSource {
   static async listRestaurants() {
@@ -9,7 +8,7 @@ class RestaurantSource {
       return responseJson;
     } catch (error) {
       console.log(error);
-      return [];
+      return null;
     }
   }
 
@@ -30,7 +29,6 @@ class RestaurantSource {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          // 'X-Auth-Token': CONFIG.KEY,
         },
         body: JSON.stringify({
           id: data.id,
@@ -40,11 +38,6 @@ class RestaurantSource {
       });
 
       const responseJSON = await response.json();
-
-      console.log(data);
-      console.log(response);
-      console.log(responseJSON);
-
       return responseJSON;
     } catch (error) {
       console.log(error);

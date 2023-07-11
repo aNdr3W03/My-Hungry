@@ -248,8 +248,8 @@ detail-resto section h2 {
 }
 
 .review-form-element input {
-  height: 36px;
-  padding: 6px 8px;
+  height: 44px;
+  padding: 6px 10px;
   font-size: 16px;
   border: 1px solid #CC5009;
   border-radius: 8px;
@@ -259,7 +259,7 @@ detail-resto section h2 {
 
 .review-form-element textarea {
   height: 100px;
-  padding: 6px 8px;
+  padding: 6px 10px;
   font-size: 16px;
   border: 1px solid #CC5009;
   border-radius: 8px;
