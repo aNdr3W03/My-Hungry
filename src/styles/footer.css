@@ -9,6 +9,7 @@ footer {
 }
 
 footer a {
+  padding: 14px 0;
   color: white;
   text-decoration: none;
 	transition: 0.2s opacity;
