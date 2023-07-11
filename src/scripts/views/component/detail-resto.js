@@ -100,11 +100,11 @@ class DetailResto extends HTMLElement {
             <input type="hidden" name="id" value="${this._data.id}">
             <div class="review-form-element">
               <label for="name">Nama</label>
-              <input type="text" name="name" id="name" autocomplete="off" required>
+              <input type="text" name="name" id="name" autocomplete="off">
             </div>
             <div class="review-form-element">
               <label for="review">Ulasan</label>
-              <textarea name="review" id="review" required></textarea>
+              <textarea name="review" id="review"></textarea>
             </div>
             <button type="submit" id="button-review">Kirim Ulasan</button>
           </form>

@@ -26,17 +26,26 @@ class RestaurantSource {
 
   static async sendReviewRestaurant(data) {
     try {
-      const response = await fetch(API_ENDPOINT.review, {
+      const response = await fetch(API_ENDPOINT.REVIEW, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-Auth-Token': CONFIG.KEY,
+          // 'X-Auth-Token': CONFIG.KEY,
         },
-        body: data,
+        body: JSON.stringify({
+          id: data.id,
+          name: data.name,
+          review: data.review,
+        }),
       });
 
-      const responseJson = await response.json();
-      return responseJson;
+      const responseJSON = await response.json();
+
+      console.log(data);
+      console.log(response);
+      console.log(responseJSON);
+
+      return responseJSON;
     } catch (error) {
       console.log(error);
       return null;

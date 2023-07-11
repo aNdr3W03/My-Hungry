@@ -10,25 +10,6 @@ const createPageLoaderTemplate = {
   },
 };
 
-const createReviewTemplate = (reviews) => {
-  const review = reviews.customerReviews[reviews.customerReviews.length - 1];
-  const html = document.createElement('div');
-
-  html.classList.add('review-container');
-  html.innerHTML = `
-    <div class="review-photo-profile">
-      <img src="./images/user/default.jpg" alt="consumer photo profile">
-    </div>
-    <div class="review-body">
-      <h3 class="review-consumer-name">${review.name}</h3>
-      <small class="review-date-restaurant">${review.date}</small>
-      <p class="review-content">${review.review}</p>
-    </div>
-  `;
-
-  return html;
-};
-
 const createButtonLoaderTemplate = () => `
   <div class="btn-loader"></div>
 `;
@@ -79,12 +60,35 @@ const createRemoveFavoriteNotification = {
   },
 };
 
+const createReviewTemplate = (reviews) => {
+  console.log(reviews);
+
+  const review = reviews.customerReviews[reviews.customerReviews.length - 1];
+  console.log(review);
+
+  const html = document.createElement('div');
+
+  html.classList.add('review-container');
+  html.innerHTML = `
+    <div class="review-photo-profile">
+      <img src="./images/user/default.jpg" alt="Foto profil pelanggan">
+    </div>
+    <div class="review-body">
+      <h3 class="review-consumer-name">${review.name}</h3>
+      <small class="review-date-restaurant">${review.date}</small>
+      <p class="review-content">${review.review}</p>
+    </div>
+  `;
+
+  return html;
+};
+
 export {
   createPageLoaderTemplate,
-  createReviewTemplate,
   createButtonLoaderTemplate,
   createLikeButtonTemplate,
   createUnlikeButtonTemplate,
   createSuccessFavoriteNotification,
   createRemoveFavoriteNotification,
+  createReviewTemplate,
 };

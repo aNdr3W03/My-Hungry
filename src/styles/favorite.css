@@ -1,0 +1,15 @@
+favorite-resto {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+.empty-favorite-img img {
+  width: 80%;
+}
+
+.empty-favorite-tag p {
+  font-size: 18px;
+  color: #444444;
+}

@@ -1,0 +1,53 @@
+.success-message {
+  position: fixed;
+  padding: 16px;
+  bottom: 5%;
+  right: 5%;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  color: #FFFFFF;
+  background-color: #20DD20;
+  z-index: 9;
+  animation: showNotification 0.5s, hideNotification 0.5s 5s;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fav-notif {
+  position: fixed;
+  padding: 16px;
+  bottom: 5%;
+  right: 5%;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  color: #FFFFFF;
+  background-color: #885012;
+  z-index: 9;
+  animation: showNotification 0.5s, hideNotification 0.5s 5s;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@keyframes showNotification {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  } to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hideNotification {
+  from {
+      transform: translateX(0);
+      opacity: 1;
+  } to {
+      transform: translateX(40px);
+      opacity: 0;
+  }
+}

@@ -14,13 +14,9 @@ const ReviewInitiator = {
     const data = new FormData(form);
     const dataForm = {};
 
-    data.keys().forEach((key) => {
+    for (const key of data.keys()) {
       dataForm[key] = data.get(key);
-    });
-
-    // for (const key of data.keys()) {
-    //   dataForm[key] = data.get(key);
-    // }
+    }
 
     return dataForm;
   },
@@ -32,19 +28,12 @@ const ReviewInitiator = {
       keys: [],
     };
 
-    data.forEach((key) => {
+    for (const key in data) {
       if (data[key] === '') {
         error.status = true;
         error.keys.push(key);
       }
-    });
-
-    // for (const key in data) {
-    //   if (data[key] === '') {
-    //     error.status = true;
-    //     error.keys.push(key);
-    //   }
-    // }
+    }
 
     if (error.status === false) {
       this.sendData({
@@ -64,9 +53,14 @@ const ReviewInitiator = {
 
     error.keys.forEach((key) => {
       const element = document.querySelector(`#${key}`);
+      let keyId = '';
+
+      if (key === 'name') { keyId = 'Nama'; }
+      if (key === 'review') { keyId = 'Ulasan'; }
+
       const errorElement = document.createElement('span');
       errorElement.setAttribute('class', 'input-require');
-      errorElement.innerText = `Field ${key} must be filled`;
+      errorElement.innerText = `❗Kolom ${keyId} wajib diisi!`;
       element.after(errorElement);
     });
   },
@@ -81,17 +75,18 @@ const ReviewInitiator = {
 
     const messageElement = document.createElement('div');
     messageElement.classList.add('success-message');
-    messageElement.classList.add('show-message');
-    messageElement.innerHTML = '<p>review added successfully</p>';
+    messageElement.innerHTML = '<p>Ulasan berhasil ditambahkan</p>';
 
     formElement.prepend(messageElement);
 
     setTimeout(() => {
       messageElement.remove();
-    }, 3000);
+    }, 5200);
   },
 
   async sendData({ data, form, container }) {
+    console.log(`sendData data: ${data}`);
+
     try {
       const reviewForm = form;
       reviewForm.querySelector('button').innerHTML = createButtonLoaderTemplate();
@@ -100,7 +95,7 @@ const ReviewInitiator = {
       this.successHandler(form);
 
       container.appendChild(createReviewTemplate(response));
-      reviewForm.querySelector('button').innerHTML = 'Add Review';
+      reviewForm.querySelector('button').innerHTML = 'Kirim Ulasan';
     } catch (err) {
       console.log(err);
     }

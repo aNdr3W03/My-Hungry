@@ -4,6 +4,8 @@
 @import 'hero.css';
 @import 'content.css';
 @import 'detail.css';
+@import 'favorite.css';
+@import 'notification.css';
 @import 'footer.css';
 @import 'responsive.css';
 
@@ -11,29 +13,29 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(50%, 50%);
   width: 50px;
   height: 50px;
+  border: 5px solid #DDDDDD;
   border-radius: 100%;
-  border: 5px solid #dadada;
-  border-top-color: #d95821;
-  z-index: 99;
+  border-top-color: #CC5009;
+  z-index: 9;
+  transform: translate(50%, 50%);
   animation: spin 1s linear infinite;
 }
 
 .btn-loader {
   width: 20px;
   height: 20px;
+  border: 5px solid #DDDDDD;
   border-radius: 100%;
-  border: 5px solid #dadada;
-  border-top-color: #d95821;
+  border-top-color: #CC5009;
   animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
   from {
-      transform: rotate(0);
+    transform: rotate(0);
   } to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
