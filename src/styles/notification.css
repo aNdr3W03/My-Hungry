@@ -24,7 +24,7 @@
   font-weight: bold;
   border-radius: 8px;
   color: #FFFFFF;
-  background-color: #885012;
+  background-color: #17BB17;
   z-index: 9;
   animation: showNotification 0.5s, hideNotification 0.5s 5s;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

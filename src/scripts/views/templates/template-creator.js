@@ -30,7 +30,7 @@ const createSuccessFavoriteNotification = {
   show() {
     return `
       <div class="fav-notif">
-        <p>Restoran ini ditambahkan ke halaman Favorite</p>
+        <p>Ditambahkan ke Favorite</p>
       </div>
     `;
   },
@@ -47,7 +47,7 @@ const createRemoveFavoriteNotification = {
   show() {
     return `
       <div class="fav-notif">
-        <p>Restoran ini sudah dihapus dari halaman Favorite</p>
+        <p>Dihapus dari Favorite</p>
       </div>
     `;
   },
