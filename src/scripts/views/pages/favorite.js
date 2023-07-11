@@ -8,9 +8,11 @@ const Favorite = {
     const html = `
       ${document.querySelector('main').innerHTML = createPageLoaderTemplate.show()}
       <section class="content" id="content">
-        <h1 class="content-title">Favorite Restaurant</h1>
-        <div class="posts" id="posts">
-          <resto-list></resto-list>
+        <div class="content-inner">
+          <h1>Favorite Restaurant</h1>
+          <div id="favs">
+            <resto-list class="content-list"></resto-list>
+          </div>
         </div>
       </section>
     `;
@@ -25,7 +27,7 @@ const Favorite = {
     if (restaurants.length > 0) {
       restoContainer.value = restaurants;
     } else {
-      document.querySelector('#posts').innerHTML = '<favorite-resto></favorite-resto>';
+      document.querySelector('#favs').innerHTML = '<favorite-resto></favorite-resto>';
     }
 
     createPageLoaderTemplate.remove();

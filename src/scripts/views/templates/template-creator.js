@@ -21,7 +21,7 @@ const createReviewTemplate = (reviews) => {
     </div>
     <div class="review-body">
       <h3 class="review-consumer-name">${review.name}</h3>
-      <small class="review-date-post">${review.date}</small>
+      <small class="review-date-restaurant">${review.date}</small>
       <p class="review-content">${review.review}</p>
     </div>
   `;

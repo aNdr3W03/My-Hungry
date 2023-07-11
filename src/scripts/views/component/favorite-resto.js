@@ -5,13 +5,14 @@ class FavoriteResto extends HTMLElement {
 
   _render() {
     this.innerHTML = `
-      <div class="empty-favorite-icon">
-        <i class="far fa-folder-open"></i>
+      <div class="empty-favorite-img">
+        <img src="./images/favorite/favorite-empty.png" alt="Halaman favorite kosong">
       </div>
+
       <div class="empty-favorite-tag">
         <p>Yah, restoran favoritmu masih kosong nih &#128549;</p>
       </div>
-  `;
+    `;
   }
 }
 

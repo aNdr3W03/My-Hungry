@@ -189,7 +189,7 @@ detail-resto section h2 {
   text-transform: capitalize;
 }
 
-.review-date-post {
+.review-date-restaurant {
   font-size: 12px;
   color: #888888;
 }
@@ -232,6 +232,7 @@ detail-resto section h2 {
 }
 
 .review-form-element input {
+  height: 36px;
   padding: 6px 8px;
   font-size: 16px;
   border: 1px solid #CC5009;
@@ -299,6 +300,10 @@ detail-resto section h2 {
   opacity: 1;
 }
 
+
+
+
+
 .like {
   display: flex;
   width: 52px;
@@ -327,26 +332,23 @@ detail-resto section h2 {
 
 
 
-empty-favorite {
+favorite-resto {
   display: grid;
   width: 100%;
   align-items: center;
   justify-items: center;
 }
 
-.empty-favorite-icon .fa-folder-open {
-  font-size: 200px;
-  color: #db0000;
+.empty-favorite-img img {
+  width: 80%;
 }
 
 .empty-favorite-tag p {
-  font-size: 24px;
-  color: #222121;
+  font-size: 18px;
+  color: #444444;
 }
 
-.notif-favorite-container {
-  position: fixed;
-}
+
 
 
 
@@ -363,13 +365,13 @@ empty-favorite {
   color: #FFFFFF;
   background-color: #885012;
   z-index: 9;
-  animation: showNotif 0.5s, hideNotif 0.5s 5s;
+  animation: showNotification 0.5s, hideNotification 0.5s 5s;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-@keyframes showNotif {
+@keyframes showNotification {
   from {
       transform: translateX(40px);
       opacity: 0;
@@ -379,7 +381,7 @@ empty-favorite {
   }
 }
 
-@keyframes hideNotif {
+@keyframes hideNotification {
   from {
       transform: translateX(0);
       opacity: 1;

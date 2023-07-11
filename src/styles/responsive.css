@@ -100,6 +100,10 @@
   detail-resto {
     max-width: 650px;
   }
+
+  .empty-favorite-img {
+    max-width: 650px;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -112,6 +116,10 @@
   }
 
   detail-resto {
+    max-width: 800px;
+  }
+
+  .empty-favorite-img {
     max-width: 800px;
   }
 }
@@ -152,5 +160,9 @@
 
   .menu-list {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .empty-favorite-img {
+    max-width: 1000px;
   }
 }
