@@ -1,5 +1,5 @@
 import API_ENDPOINT from '../globals/api-endpoint';
-import CONFIG from '../globals/config';
+// import CONFIG from '../globals/config';
 
 class RestaurantSource {
   static async listRestaurants() {
