@@ -43,6 +43,10 @@ https://github.com/aNdr3W03/My-Hungry/assets/64983961/2865a26e-4aee-4565-a32f-28
 <a href="https://karma-runner.github.io/latest/index.html" title="KarmaJS" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/karmajs-43C1B1.svg?style=for-the-badge"></a>
 <a href="https://codecept.io" title="CodeceptJS" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/codeceptjs-FFE680.svg?style=for-the-badge"></a>
 
+## Data Resource
+
+Restaurant data is taken from the API source provided by [Dicoding](https://www.dicoding.com "Dicoding Indonesia"). The API link and its documentation can be seen at the following link, [restaurant-api.dicoding.dev](https://restaurant-api.dicoding.dev "Restaurant API Documentation").
+
 ## Installation
 
 The steps to install this project on your local machine are as follows:
@@ -95,6 +99,7 @@ You can check the Test Cases that were run for automation testing on this projec
 
 [`README.md`](https://github.com/aNdr3W03/My-Hungry/blob/main/specs/README.md "README.md")
 
-Juga tersedia dalam bahasa indonesia loh!
+Also available in Indonesian!  
+*Juga tersedia dalam bahasa indonesia loh!*
 
 [`README.id.md`](https://github.com/aNdr3W03/My-Hungry/blob/main/specs/README.id.md "README.id.md")
