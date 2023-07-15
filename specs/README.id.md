@@ -13,20 +13,20 @@
 2. Tombol untuk menyukai restoran ditampilkan.
 3. Tombol menyukai restoran ditekan oleh pengguna.
 4. Restoran ditambahkan ke daftar restoran favorit:
-    a. Ternyata restoran sudah disukai:
-        - Tidak perlu menyimpan kembali.
-    b. Data restoran tidak memiliki ID:
-        - Sistem tidak memproses penyimpanan.
-        - Sistem tidak gagal.
+   * Ternyata restoran sudah disukai:
+      * Tidak perlu menyimpan kembali.
+   * Data restoran tidak memiliki ID:
+      * Sistem tidak memproses penyimpanan.
+      * Sistem tidak gagal.
 
 ## Skenario Batal Menyukai Restoran
 
 1. Restoran sudah disukai.
 2. Tombol untuk batal menyukai restoran ditampilkan.
 3. Tombol batal menyukai restoran ditekan oleh pengguna.
-4. Restoran dihapus dari daftar restoran favorit.
-    a. Ternyata restoran tidak ada dalam daftar restoran yang disukai.
+4. Restoran dihapus dari daftar restoran favorit:
+   * Ternyata restoran tidak ada dalam daftar restoran yang disukai.
 
 Keterangan:
-- Alur positif dijelaskan pada poin berangka.
-- Alur negatif dijelaskan pada poin huruf.
+- Alur positif dijelaskan pada poin angka.
+- Alur negatif dijelaskan pada poin bullet.
