@@ -17,6 +17,14 @@
   "keywords": [],
   "author": "Andrew Benedictus Jamesie <andrewbjamesie@yahoo.com>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aNdr3W03/My-Hungry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aNdr3W03/My-Hungry/issues"
+  },
+  "homepage": "https://github.com/aNdr3W03/My-Hungry#readme",
   "devDependencies": {
     "@babel/core": "^7.18.5",
     "@babel/preset-env": "^7.18.2",
