@@ -36,6 +36,7 @@ class DetailResto extends HTMLElement {
   }
 
   _render() {
+    document.title = `My Hungry | ${this._data.name}`;
     this.innerHTML = `
       <div id="notif-favorite-container"></div>
 

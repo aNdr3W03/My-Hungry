@@ -5,6 +5,8 @@ import { createPageLoaderTemplate } from '../templates/template-creator';
 
 const Favorite = {
   async render() {
+    document.title = 'My Hungry | Favorite';
+
     const html = `
       ${document.querySelector('main').innerHTML = createPageLoaderTemplate.show()}
       <section class="content" id="content">

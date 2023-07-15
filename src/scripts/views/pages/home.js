@@ -4,6 +4,8 @@ import { createPageLoaderTemplate } from '../templates/template-creator';
 
 const Home = {
   async render() {
+    document.title = 'My Hungry | Homepage';
+
     const html = `
       ${document.querySelector('main').innerHTML = createPageLoaderTemplate.show()}
       <!-- Jumbotron -->
