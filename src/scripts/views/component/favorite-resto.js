@@ -9,7 +9,7 @@ class FavoriteResto extends HTMLElement {
         <picture>
           <source media="(max-width: 650px)" srcset="./images/favorite/favorite-empty-small.png">
           <source media="(max-width: 900px)" srcset="./images/favorite/favorite-empty-medium.png">
-          <img src="./images/favorite/favorite-empty-large.png" alt="Halaman favorite kosong">
+          <img src="./images/favorite/favorite-empty-large.png" class="lazyload" loading="lazy" alt="Halaman favorite kosong">
         </picture>
       </div>
 

@@ -69,7 +69,7 @@ const createReviewTemplate = (reviews) => {
   html.classList.add('review-container');
   html.innerHTML = `
     <div class="review-photo-profile">
-      <img src="./images/user-default-small.jpg" alt="Foto profil pelanggan">
+      <img src="./images/user-default-small.jpg" class="lazyload" loading="lazy" alt="Foto profil pelanggan">
     </div>
     <div class="review-body">
       <h3 class="review-consumer-name">${review.name}</h3>

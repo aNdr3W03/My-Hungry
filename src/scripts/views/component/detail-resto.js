@@ -40,7 +40,7 @@ class DetailResto extends HTMLElement {
       <div id="notif-favorite-container"></div>
 
       <article>
-        <img src="${CONFIG.BASE_IMAGE_URL.LARGE + this._data.pictureId}" class="detail-image" alt="${this._data.name}">
+        <img src="${CONFIG.BASE_IMAGE_URL.LARGE + this._data.pictureId}" class="detail-image lazyload" loading="lazy" alt="${this._data.name}">
         <div id="likeButtonContainer"></div>
         <div class="detail-content">
           <h1 class="detail-title">${this._data.name}</h1>
@@ -84,7 +84,7 @@ class DetailResto extends HTMLElement {
           ${this._data.customerReviews.map((review) => `
           <div class="review-container">
             <div class="review-photo-profile">
-              <img src="./images/user-default-small.jpg" alt="Foto profil pelanggan">
+              <img src="./images/user-default-small.jpg" class="lazyload" loading="lazy" alt="Foto profil pelanggan">
             </div>
             <div class="review-body">
               <h3 class="review-customer-name">${review.name}</h3>

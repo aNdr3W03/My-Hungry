@@ -9,7 +9,7 @@ class RestoItem extends HTMLElement {
   _render() {
     this.innerHTML = `
       <article class="content-list-item">
-        <img class="content-list-item-img" loading="lazy" src="${CONFIG.BASE_IMAGE_URL.MEDIUM + this._data.pictureId}" alt="${this._data.name}" title="${this._data.name}">
+        <img class="content-list-item-img lazyload" loading="lazy" src="${CONFIG.BASE_IMAGE_URL.MEDIUM + this._data.pictureId}" alt="${this._data.name}" title="${this._data.name}">
         <span class="content-list-item-city">${this._data.city}</span>
         <p class="content-list-item-rating">⭐ ${this._data.rating}</p>
         <div class="content-list-item-detail">
