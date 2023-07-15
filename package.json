@@ -9,6 +9,7 @@
     "serve": "http-server dist --port 9000",
     "build-serve": "npm run build && npm run serve",
     "lint": "eslint ./src",
+    "test": "karma start",
     "e2e": "codeceptjs run --steps"
   },
   "keywords": [],
