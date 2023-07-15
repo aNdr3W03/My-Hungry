@@ -9,7 +9,7 @@
   }
 
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('../public/images/hero/hero-image-small.jpg');
+    background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('./images/hero/hero-image-small.jpg');
   }
 
   .hero-content {
@@ -44,7 +44,7 @@
   }
 
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('../public/images/hero/hero-image-small.jpg');
+    background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('./images/hero/hero-image-small.jpg');
   }
 
   .hero-content {
@@ -79,7 +79,7 @@
   }
 
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('../public/images/hero/hero-image-small.jpg');
+    background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('./images/hero/hero-image-small.jpg');
   }
 
   .hero-content {
@@ -106,7 +106,7 @@
   }
 
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('../public/images/hero/hero-image-medium.jpg');
+    background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('./images/hero/hero-image-medium.jpg');
   }
 
   .hero-content {
@@ -128,7 +128,7 @@
   }
 
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('../public/images/hero/hero-image-medium.jpg');
+    background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('./images/hero/hero-image-medium.jpg');
   }
 
   .hero-content {
@@ -150,7 +150,7 @@
   }
 
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('../public/images/hero/hero-image-large.jpg');
+    background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('./images/hero/hero-image-large.jpg');
   }
 
   .hero-content {

@@ -84,7 +84,7 @@ class DetailResto extends HTMLElement {
           ${this._data.customerReviews.map((review) => `
           <div class="review-container">
             <div class="review-photo-profile">
-              <img src="./images/user/default.jpg" alt="Foto profil pelanggan">
+              <img src="./images/user-default-small.jpg" alt="Foto profil pelanggan">
             </div>
             <div class="review-body">
               <h3 class="review-customer-name">${review.name}</h3>
