@@ -8,7 +8,7 @@ class NavBar extends HTMLElement {
       <!-- Navbar Mobile -->
       <div class="menu-mobile">
         <div class="icon-menu" id="menu"><a href="#">&#9776;</a></div>
-        <div class="logo-mobile"><a href="">My Hungry</a></div>
+        <div class="logo-mobile"><a href="https://myhungry.netlify.app" title="My Hungry">My Hungry</a></div>
         <div class="logo-mobile">&nbsp;</div>
       </div>
       <nav class="navbar-mobile" id="drawer">
@@ -21,7 +21,7 @@ class NavBar extends HTMLElement {
     
       <!-- Navbar Desktop -->
       <nav class="navbar-desktop">
-        <a href="" class="logo">My Hungry</a>
+        <a href="https://myhungry.netlify.app" class="logo" title="My Hungry">My Hungry</a>
         <ul class="navbar-list-desktop">
           <li class="navbar-item-desktop"><a href="#">Home</a></li>
           <li class="navbar-item-desktop"><a href="#/favorite">Favorite</a></li>
